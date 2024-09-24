@@ -1,0 +1,48 @@
+/*estilo da parte de navegação*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    width: 100%;
+  }
+  .menu-icon {
+    display: none;
+  }
+  
+  .container-grid {
+    width: 80%;
+  }
+  
+  .container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #121212;
+  }
+  
+  .container-menu h1 {
+    color: #00D2DF;
+  }
+  
+  .container-menu h1:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .container-menu .links ul li{
+    display: inline;
+    
+  }
+  
+  .links ul li  {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .links ul li:hover {
+    color: #00D2DF;
+    cursor: pointer;
+  }
