@@ -2,4 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;    
+  font-family: "Inter", sans-serif;
+}
+
+
+:root {
+  --dark-100: #121212;
+  --dark-70: #151515;
+  --dark-40: #C4C4C4;
+  --white: #FFFFFF;
+
+  --support-01: #2962FF;
+  --support-02: #0BB07B;
+  --support-03: #FFCE52;
+  --support-04: #F03D3D;
+  --support-05: #E0E0E0;
+
+  --brand-color: #00D2DF;
+
 }

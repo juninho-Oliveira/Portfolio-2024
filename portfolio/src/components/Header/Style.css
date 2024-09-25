@@ -2,7 +2,7 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: #121212;
+    background-color: var(--dark-100);
     width: 100%;
   }
   .menu-icon {
@@ -18,15 +18,14 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: #121212;
   }
   
   .container-menu h1 {
-    color: #00D2DF;
+    color: var(--brand-color);
   }
   
   .container-menu h1:hover {
-    color: white;
+    color: var(--white);
     cursor: pointer;
   }
   
@@ -37,12 +36,12 @@ header {
   
   .links ul li  {
     font-size: 17px;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     margin: 20px;
   }
   
   .links ul li:hover {
-    color: #00D2DF;
+    color: var(--brand-color);
     cursor: pointer;
   }
