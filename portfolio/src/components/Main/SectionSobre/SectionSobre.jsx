@@ -11,7 +11,7 @@ export function SectionSobre() {
       <div className="container-grid container-texto-sobre">
 
         <div className="foto">
-           <img src={Perfil} alt='Logotipo do App' />
+          <img src={Perfil} alt='Logotipo do App' />
         </div>
 
         <div className="texto-sobre">
@@ -27,7 +27,7 @@ export function SectionSobre() {
 
 
           <div className="redes-sociais">
-            <a href="" target="_blank">< InstagramLogo size={32} /></a>
+            <a href="https://www.instagram.com/juninho_oliveirah/" target="_blank">< InstagramLogo size={32} /></a>
             <a href="https://www.linkedin.com/in/dami%C3%A3o-junior/" target="_blank">< LinkedinLogo size={32} /></a>
             <a href="https://github.com/juninho-Oliveira" target="_blank">< GithubLogo size={32} /></a>
           </div>
@@ -35,13 +35,14 @@ export function SectionSobre() {
           <div className="curriculo">
 
             <div className="cards-redes Linkedin">
-            <CloudArrowDown size={32} />
-              <a href="#" target="_blank"> E-mail</a>
+              <EnvelopeSimple size={32} />
+              <a href="mailto:junior.oliveira05@icloud.com" > E-mail</a>
             </div>
 
             <div className="cards-redes Github">
-            <EnvelopeSimple size={32} />
-              <a href="#" target="_blank"> Currículo</a>
+
+              <CloudArrowDown size={32} />
+              <a href="/assets/Damio-Junior-Oliveira.pdf" download="/assets/Damio-Junior-Oliveira.pdf"> Currículo</a>
             </div>
 
           </div>

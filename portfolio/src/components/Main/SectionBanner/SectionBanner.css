@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center ;
     width: 100%;
-    background-image: url(/src/assets/Looper\ BG.svg);
+    background-image: url(/public/assets/Looper\ BG.svg );
     background-position: right 5rem;
     background-repeat: no-repeat;
     background-color: var(--dark-100);

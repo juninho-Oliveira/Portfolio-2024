@@ -5,6 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
+ul li  {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 
 :root {
   --dark-100: #121212;
