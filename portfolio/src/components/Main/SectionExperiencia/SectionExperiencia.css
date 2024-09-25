@@ -1,0 +1,61 @@
+/*estilo da terceira parte EXPERIÊNCIA*/
+.container-cor{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .experiencia{
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:218px ;
+    height: 402px;
+    gap: 20px;
+  }
+  
+  .experiencia h1 {
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .container-experiencia ul li {
+    text-transform: none;
+  }
+  
+  .container-experiencia ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+  }
+  
+  .container-experiencia ul li a:hover {
+    color: #00D2DF;
+  }
+  
+  .professor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 630px;
+    height: 205px;
+    color: white;
+  }
+  
+  .texto-professor{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .professor span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #00D2DF;
+  }
+  

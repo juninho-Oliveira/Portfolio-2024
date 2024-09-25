@@ -1,0 +1,60 @@
+ /*estilo da segunda parte do main sobre mim*/
+  
+ .container-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 564px;
+    background-color: #151515;
+  }
+  
+  .container-texto-sobre {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container-texto-sobre .foto {
+    width: 367px;
+    border-radius: 5px;
+    border-left: 5px solid #00D2DF;
+  }
+  
+  .container-texto-sobre .foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .texto-sobre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 559px;
+    color: white;
+  }
+  
+  .texto-sobre h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .texto-sobre h4 {
+    line-height: 3;
+    font-size: 18px;
+  }
+  
+  .texto-sobre p {
+    line-height: 2;
+  }
+  
+  .curriculo {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .redes-sociais {
+    margin-bottom: 30px;
+  }
+  
