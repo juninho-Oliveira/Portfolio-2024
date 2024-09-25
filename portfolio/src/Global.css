@@ -22,3 +22,134 @@
   --Git: #D24074;
   --Linkedin: #9358F7;
 }
+
+/*treinando @media*/
+@media (max-width:970px) {
+  .container-menu h1 {
+    font-size: 25px;
+  }
+  nav .menu-icon{
+    display: block;
+}
+nav ul{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s ease-in;
+    background-color: #151515;
+}
+nav ul.active {
+    transform: translateX(0);
+}
+
+nav ul li {
+    padding: 10px;
+}
+nav ul li a {
+    font-size: 18px;
+    color: white;
+}
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .container-nome-user {
+    height: 362px;
+    background-image: none;
+  }
+
+  .container-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nome-do-portfolio {
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  .nome-do-portfolio h1 {
+    font-size: 32px;
+  }
+
+  .nome-do-portfolio h4 p {
+    font-size: 16px;
+  }
+
+  .redes-sociais{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cards-redes {
+    width: 144px;
+    height: 40px;
+  }
+
+  .container-texto-sobre .foto {
+    display: none;
+  }
+
+  /*estilo dos projetos */
+  .container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+  }
+
+  .cards-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 312px;
+    margin-bottom: 0px;
+  }
+  .imagem-projetos {
+    width: 312px;
+    height: 130px;
+  }
+  #botao-cards {
+    width: 312px;
+  }
+  .texto-projetos h1 {
+    font-size: 18px;
+  }
+
+  .texto-projetos p {
+    font-size: 16px;
+  }
+
+  .professor .texto-professor {
+    display: none;
+  }
+
+  .professor  {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    padding-top: 50px;
+  }
+
+  #digital-house{
+    color: #00D2DF;
+    font-weight: 600;
+  }
+  .professor span  {
+    display: none;
+  }
+
+}

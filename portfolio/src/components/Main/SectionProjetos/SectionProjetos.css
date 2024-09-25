@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     width: 80%;
-    color: white;
+    color: var(--white);
   }
   .container-projetos {
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: #151515;
+    background-color: var(--dark-70);
   }
   
   .container-cards {
@@ -22,13 +22,6 @@
     flex-wrap: wrap;
   }
   
-  .projetos{
-    display: flex;
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    border: 1px solid red;
-  }
   
   .cards-projetos {
     width: 530px;
@@ -40,16 +33,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 6px solid #00D2DF;
+    border-left: 6px solid var(--brand-color);
     border-radius: 5px;
     width: 530px;
     height: 200px;
-    background-color: #121212;
+    background-color: var(--dark-100);
   }
   
   .imagem-projetos h1 {
       font-size: 30px;
-      color: #00D2DF;
+      color: var(--brand-color);
   }
   
   .texto-projetos {
@@ -63,16 +56,16 @@
   
   .texto-projetos h1 {
     font-size: 24px;
-    color: white;
+    color: var(--white);
   }
   
   .texto-projetos p {
     font-size: 18px;
-    color: white;
+    color: var(--white);
   }
   
   .texto-projetos span {
-    color: #00D2DF;
+    color: var(--brand-color);
     font-size: 17px;
   }
   

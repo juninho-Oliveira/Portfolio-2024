@@ -1,47 +1,54 @@
 import './SectionSobre.css'
+import { InstagramLogo, GithubLogo, LinkedinLogo, CloudArrowDown, EnvelopeSimple } from 'phosphor-react'
 
-export function SectionSobre () {
-    return (
+export function SectionSobre() {
+
+  const Perfil = "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/448795210_2178029879197218_7962828645894631869_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LQbjVPh8rpkQ7kNvgGENreh&_nc_ht=scontent-gru2-2.xx&_nc_gid=A-tVTRUHyCOITAgoBeg1fvm&oh=00_AYA0xxUE6-2DaujTyhF9DEIK5Zx3aU86aDM5709cDRuT3g&oe=66FA08FD";
+
+  return (
     <section className="container-sobre" id="Sobre">
 
-    <div className="container-grid container-texto-sobre">
+      <div className="container-grid container-texto-sobre">
 
         <div className="foto">
-          {/* <img src="/imagem/perfil.jpg" alt="foto do user"> */}
+           <img src={Perfil} alt='Logotipo do App' />
         </div>
 
         <div className="texto-sobre">
           <h1>Sobre mim</h1>
-          <h4>Guarantã, Brasil</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean ac commodo dolor, nec bibendum velit.</p>
-        
+          <p>Desenvolvedor Front-End com sólidos conhecimentos em HTML, CSS, JavaScript e React.
 
-        <div className="redes-sociais">
-          {/* <img src="/imagem/twitter.png" alt="twitter">
-          <img src="/imagem/twitch.png" alt="twitch">
-          <img src="/imagem/youtube.png" alt="youtube">
-          <img src="/imagem/figma.png" alt="figma">
-          <img src="/imagem/codepen.png" alt="codepen">
-          <img src="/imagem/facebook.png" alt="facebook"> */}
-        </div>
+            Apaixonado por criar interfaces intuitivas e funcionais, com foco em performance e experiência do usuário.
 
-        <div className="curriculo">
+            Tenho experiência prática em construção de aplicações web responsivas e escaláveis, sempre buscando expandir meu conhecimento com novas tecnologias e contribuir para projetos inovadores.
+
+            Bolsista de programas de formação renomados como Ford e iFood.
+          </p>
+
+
+          <div className="redes-sociais">
+            <a href="" target="_blank">< InstagramLogo size={32} /></a>
+            <a href="https://www.linkedin.com/in/dami%C3%A3o-junior/" target="_blank">< LinkedinLogo size={32} /></a>
+            <a href="https://github.com/juninho-Oliveira" target="_blank">< GithubLogo size={32} /></a>
+          </div>
+
+          <div className="curriculo">
 
             <div className="cards-redes Linkedin">
-              {/* <img src="/imagem/mail.png" alt="Currículo"> */}
+            <CloudArrowDown size={32} />
               <a href="#" target="_blank"> E-mail</a>
             </div>
 
-          <div className="cards-redes Github">
-            {/* <img src="/imagem/download-cloud.png" alt="E-mail"> */}
-            <a href="#" target="_blank"> Currículo</a>
+            <div className="cards-redes Github">
+            <EnvelopeSimple size={32} />
+              <a href="#" target="_blank"> Currículo</a>
+            </div>
+
           </div>
-        
+
         </div>
-        
-        </div>
-        
+
       </div>
-  </section>
-    )
+    </section>
+  )
 }

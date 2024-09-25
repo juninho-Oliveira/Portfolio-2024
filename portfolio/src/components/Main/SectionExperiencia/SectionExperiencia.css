@@ -1,6 +1,6 @@
 /*estilo da terceira parte EXPERIÊNCIA*/
 .container-cor{
-    background-color: #121212;
+    background-color: var(--dark-100);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
   
   .experiencia h1 {
     font-size: 24px;
-    color: white;
+    color: var(--white);
     text-transform: uppercase;
   }
   
@@ -28,13 +28,13 @@
   
   .container-experiencia ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
     font-size: 18px;
     line-height: 2;
   }
   
   .container-experiencia ul li a:hover {
-    color: #00D2DF;
+    color: var( --brand-color);
   }
   
   .professor{
@@ -44,7 +44,7 @@
     gap: 20px;
     width: 630px;
     height: 205px;
-    color: white;
+    color: var(--white);
   }
   
   .texto-professor{
@@ -56,6 +56,6 @@
   .professor span {
     font-size: 16px;
     font-weight: 600;
-    color: #00D2DF;
+    color: var(--brand-color);
   }
   

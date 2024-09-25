@@ -5,17 +5,17 @@ import { SectionProjetos } from './SectionProjetos/SectionProjetos'
 import { SectionSobre } from './SectionSobre/SectionSobre'
 
 
-export function Main () {
-    return (
-        <main>
-          <SectionBanner />
+export function Main() {
+  return (
+    <main>
+      <SectionBanner />
 
-          <SectionSobre />
+      <SectionSobre />
 
-          <SectionExperiencia />
+      <SectionExperiencia />
 
-          <SectionProjetos />
-  </main>
-  
-    )
+      <SectionProjetos />
+    </main>
+
+  )
 }

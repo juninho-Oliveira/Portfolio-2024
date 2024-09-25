@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 564px;
-    background-color: #151515;
+    height: 35rem;
+    background-color: var(--dark-70);
+   
   }
   
   .container-texto-sobre {
@@ -15,27 +16,29 @@
   }
   
   .container-texto-sobre .foto {
-    width: 367px;
+    width: 23rem;
+    height: 23rem;
     border-radius: 5px;
-    border-left: 5px solid #00D2DF;
+    border-left: 8px solid var(--brand-color);
   }
   
   .container-texto-sobre .foto img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 0px 0px 5px 5px;
+    
   }
   
   .texto-sobre {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 559px;
-    color: white;
+    width: 34rem;
+    color: var(--white);
   }
   
   .texto-sobre h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
     font-size: 24px;
     text-transform: uppercase;
   }
@@ -51,10 +54,19 @@
   
   .curriculo {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
+  }
+
+  .redes-sociais {
+    margin-bottom: 1.5rem;
   }
   
-  .redes-sociais {
-    margin-bottom: 30px;
+  .container-texto-sobre .redes-sociais a {
+    color: var(--brand-color);
+  }
+
+  .container-texto-sobre .redes-sociais a:hover {
+    transition: 0.5s;
+    color: var(--white);
   }
   
