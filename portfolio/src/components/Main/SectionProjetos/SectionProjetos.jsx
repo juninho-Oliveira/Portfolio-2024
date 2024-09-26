@@ -4,14 +4,26 @@ import { Cards } from './Cards/Cards'
 
 export function SectionProjetos() {
 
-    const id = 2;
-    const imgSrc = 'https://images4.alphacoders.com/133/thumb-1920-1331483.png'
-    const titulo = "Nome do projeto"
-    const descricao = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius."
-    const tecnologias = "Tecnologias usadas no projeto"
-    const url = 'https://portfolio-2023-two-green.vercel.app/'
+    const resultados = [
+        {
+            id: 1,
+            imgSrc: 'https://images4.alphacoders.com/133/thumb-1920-1331483.png',
+            titulo: "Nome do projeto",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.",
+            tecnologias: "Tecnologias usadas no projeto",
+            url: 'https://portfolio-2023-two-green.vercel.app/',
+        },
+        {
+            id: 2,
+            imgSrc: 'https://images2.alphacoders.com/564/thumb-1920-564835.jpg',
+            titulo: "Nome do projeto",
+            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.",
+            tecnologias: "Tecnologias usadas no projeto",
+            url: 'https://portfolio-2023-two-green.vercel.app/',
+        },
+    ]
 
-    const quantidadeProjetos = 20
+    const quantidadeProjetos = resultados.length
 
 
     return (
@@ -25,22 +37,17 @@ export function SectionProjetos() {
 
             <div className="container-grid container-cards">
 
-                <Cards
-                    key={id}
-                    titulo={titulo}
-                    descricao={descricao}
-                    tecnologias={tecnologias}
-                    url={url}
-                    imagem={imgSrc} />
-
-
-                <Cards
-                    key={id}
-                    titulo={titulo}
-                    descricao={descricao}
-                    tecnologias={tecnologias}
-                    url={url}
-                    imagem={imgSrc} />
+                {resultados.map((resp) => {
+                    return (
+                        <Cards
+                            key={resp.id}
+                            titulo={resp.titulo}
+                            descricao={resp.descricao}
+                            tecnologias={resp.tecnologias}
+                            url={resp.url}
+                            imagem={resp.imgSrc} />
+                    )
+                })}
 
             </div>
 
