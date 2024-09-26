@@ -5,7 +5,14 @@ import { Cards } from './Cards/Cards'
 export function SectionProjetos() {
 
     const id = 2;
-    const imgSrc = 'https://t4.ftcdn.net/jpg/07/23/14/93/360_F_723149335_tA0Fo8zefrHzYlSgXRMYHmBQk7CuWrRd.jpg' 
+    const imgSrc = 'https://images4.alphacoders.com/133/thumb-1920-1331483.png'
+    const titulo = "Nome do projeto"
+    const descricao = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius."
+    const tecnologias = "Tecnologias usadas no projeto"
+    const url = 'https://portfolio-2023-two-green.vercel.app/'
+
+    const quantidadeProjetos = 20
+
 
     return (
 
@@ -13,16 +20,26 @@ export function SectionProjetos() {
 
             <div className="container-grid titulo">
                 <h1>PROJETOS</h1>
+                <p>Quantidade de projetos <span>{quantidadeProjetos}</span></p>
             </div>
 
             <div className="container-grid container-cards">
 
                 <Cards
                     key={id}
-                    titulo="Nome do projeto"
-                    descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius."
-                    tecnologias="Tecnologias usadas no projeto"
-                    url='https://portfolio-2023-two-green.vercel.app/'
+                    titulo={titulo}
+                    descricao={descricao}
+                    tecnologias={tecnologias}
+                    url={url}
+                    imagem={imgSrc} />
+
+
+                <Cards
+                    key={id}
+                    titulo={titulo}
+                    descricao={descricao}
+                    tecnologias={tecnologias}
+                    url={url}
                     imagem={imgSrc} />
 
             </div>
