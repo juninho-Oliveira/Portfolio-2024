@@ -45,7 +45,7 @@ export function SectionProjetos() {
             <div className="container-grid container-cards">
 
                 { 
-                status ? <div className='carregando'><p>Carregando...</p></div> : user.map((resp) => {
+                status ? <div className='carregando'><div className='spinner'></div></div> : user.map((resp) => {
                     return (
                         <Cards
                             key={resp.id}
