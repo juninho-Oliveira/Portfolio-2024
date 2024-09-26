@@ -34,14 +34,14 @@ header {
     
   }
   
-  .links ul li  {
+  .links ul li  a{
     font-size: 17px;
     color: var(--white);
     text-decoration: none;
     margin: 20px;
   }
   
-  .links ul li:hover {
+  .links ul li a:hover {
     color: var(--brand-color);
     cursor: pointer;
   }

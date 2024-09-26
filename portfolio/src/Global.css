@@ -5,7 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
-ul li  {
+html {
+  scroll-behavior: smooth;
+}
+
+ul, li,  a{
   text-decoration: none;
   list-style-type: none;
 }
