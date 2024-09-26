@@ -7,15 +7,16 @@ Cards.propTypes = {
     descricao: PropTypes.string.isRequired,
     tecnologias: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    imagem: PropTypes.string.isRequired,
 
 };
 
-export function Cards ({titulo, descricao, tecnologias, url}) {
+export function Cards ({titulo, descricao, tecnologias, url, imagem}) {
     return (
         <div className="cards-projetos">
 
         <div className="imagem-projetos">
-            <h1>FOTO</h1>
+            <img src={imagem} alt="Foto do projeto" />
         </div>
 
         <div className="texto-projetos">
