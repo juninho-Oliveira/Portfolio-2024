@@ -3,7 +3,7 @@ import './SectionProjetos.css'
 import { Cards } from './Cards/Cards'
 
 export function SectionProjetos() {
-
+    
     const resultados = [
         {
             id: 1,
