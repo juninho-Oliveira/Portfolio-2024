@@ -2,29 +2,36 @@
 import './SectionProjetos.css'
 import { Cards } from './Cards/Cards'
 
+import { useEffect, useState } from 'react'
+import api from '../../../services/api'
+
 export function SectionProjetos() {
-    
-    const resultados = [
-        {
-            id: 1,
-            imgSrc: 'https://images4.alphacoders.com/133/thumb-1920-1331483.png',
-            titulo: "Nome do projeto",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.",
-            tecnologias: "Tecnologias usadas no projeto",
-            url: 'https://portfolio-2023-two-green.vercel.app/',
-        },
-        {
-            id: 2,
-            imgSrc: 'https://images2.alphacoders.com/564/thumb-1920-564835.jpg',
-            titulo: "Nome do projeto",
-            descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.",
-            tecnologias: "Tecnologias usadas no projeto",
-            url: 'https://portfolio-2023-two-green.vercel.app/',
-        },
-    ]
 
-    const quantidadeProjetos = resultados.length
+    const [user, setUser] = useState(null)
+    const [loading, setLoading] = useState(true)
+    const [arr , setArr] = useState([])
 
+
+    useEffect(() => {
+        const fetchDate = async () => {
+            try {
+                const response = await api.get('/');
+                setUser(response.data)
+                setLoading(false) 
+                setArr(response.data)  
+            } catch (error) {
+                console.log(error)
+            } 
+        }
+
+        fetchDate();
+
+    }, [])
+
+
+    const quantidadeProjetos = arr.length
+
+    let status = loading;
 
     return (
 
@@ -37,7 +44,8 @@ export function SectionProjetos() {
 
             <div className="container-grid container-cards">
 
-                {resultados.map((resp) => {
+                { 
+                status ? <div className='carregando'><p>Carregando...</p></div> : user.map((resp) => {
                     return (
                         <Cards
                             key={resp.id}

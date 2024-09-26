@@ -19,5 +19,14 @@
     width: 100%;
     background-color: var(--dark-70);
   }
+
+  .carregando {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   
   
