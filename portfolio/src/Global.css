@@ -37,38 +37,6 @@ ul, li,  a{
   .container-menu h1 {
     font-size: 25px;
   }
-  nav .menu-icon{
-    display: block;
-}
-nav ul{
-    position: fixed;
-    width: 60%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.3s ease-in;
-    background-color: #151515;
-}
-nav ul.active {
-    transform: translateX(0);
-}
-
-nav ul li {
-    padding: 10px;
-}
-nav ul li a {
-    font-size: 18px;
-    color: white;
-}
-
-  .menu-icon {
-    display: flex;
-  }
 
   .container-nome-user {
     height: 362px;
@@ -154,7 +122,7 @@ nav ul li a {
   }
 
   #digital-house{
-    color: #00D2DF;
+    color: var(--brand-color);
     font-weight: 600;
   }
   .professor span  {

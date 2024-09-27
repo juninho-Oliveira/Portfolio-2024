@@ -22,7 +22,7 @@ export function SectionSobre() {
 
             Tenho experiência prática em construção de aplicações web responsivas e escaláveis, sempre buscando expandir meu conhecimento com novas tecnologias e contribuir para projetos inovadores.
 
-            Bolsista de programas de formação renomados como Ford e iFood.
+            Bolsista de programas de formação renomados como o da<a href="https://www.ford.com.br/sobre-a-ford/ford-enter/" target="_blank"> Ford</a>  e <a href="https://ada.tech/sou-aluno/programas/ifood-vem-ser-tech" target="_blank">iFood.</a>
           </p>
 
 
