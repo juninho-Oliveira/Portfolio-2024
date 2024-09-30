@@ -24,6 +24,7 @@
   
   .container-experiencia ul li {
     text-transform: none;
+    color: var(--white);
   }
   
   .container-experiencia ul li a {
