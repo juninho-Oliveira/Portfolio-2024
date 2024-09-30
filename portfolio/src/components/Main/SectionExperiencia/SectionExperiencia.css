@@ -23,6 +23,7 @@
   }
   
   .container-experiencia ul li {
+    cursor: pointer;
     text-transform: none;
     color: var(--white);
   }
