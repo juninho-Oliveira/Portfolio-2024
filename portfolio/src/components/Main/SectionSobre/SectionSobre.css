@@ -14,6 +14,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .texto-sobre .redes-sociais  {
+    color: var(--white);
+  }
+
+
   .container-texto-sobre a {
     color: var(--brand-color);
   }
@@ -71,5 +77,33 @@
   .container-texto-sobre .redes-sociais a:hover {
     transition: 0.5s;
     color: var(--white);
+  }
+
+
+  @media (max-width:970px) {
+    
+    .container-texto-sobre .texto-sobre {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 0;
+      gap: 1.2rem;
+      height: 80%;
+    }
+
+    .texto-sobre h1 {
+      margin-bottom: 0.7rem;
+    }
+
+    .container-texto-sobre .foto {
+      display: none;
+    }
+
+    .redes-sociais {
+      margin: 0;
+    }
+    
+  
   }
   

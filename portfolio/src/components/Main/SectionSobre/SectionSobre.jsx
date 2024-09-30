@@ -15,15 +15,18 @@ export function SectionSobre() {
         </div>
 
         <div className="texto-sobre">
-          <h1>Sobre mim</h1>
-          <p>Desenvolvedor Front-End com sólidos conhecimentos em HTML, CSS, JavaScript e React.
+          
+          <div>
+            <h1>Sobre mim</h1>
+            <p>Desenvolvedor Front-End com sólidos conhecimentos em HTML, CSS, JavaScript e React.
 
-            Apaixonado por criar interfaces intuitivas e funcionais, com foco em performance e experiência do usuário.
+              Apaixonado por criar interfaces intuitivas e funcionais, com foco em performance e experiência do usuário.
 
-            Tenho experiência prática em construção de aplicações web responsivas e escaláveis, sempre buscando expandir meu conhecimento com novas tecnologias e contribuir para projetos inovadores.
+              Tenho experiência prática em construção de aplicações web responsivas e escaláveis, sempre buscando expandir meu conhecimento com novas tecnologias e contribuir para projetos inovadores.
 
-            Bolsista de programas de formação renomados como o da<a href="https://www.ford.com.br/sobre-a-ford/ford-enter/" target="_blank"> Ford</a>  e <a href="https://ada.tech/sou-aluno/programas/ifood-vem-ser-tech" target="_blank">iFood.</a>
-          </p>
+              Bolsista de programas de formação renomados como o da<a href="https://www.ford.com.br/sobre-a-ford/ford-enter/" target="_blank"> Ford</a>  e <a href="https://ada.tech/sou-aluno/programas/ifood-vem-ser-tech" target="_blank">iFood.</a>
+            </p>
+          </div>
 
 
           <div className="redes-sociais">

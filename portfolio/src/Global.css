@@ -72,15 +72,6 @@ ul, li,  a{
     height: 40px;
   }
 
-  .container-texto-sobre .foto {
-    display: none;
-  }
-
-  .container-texto-sobre {
-    line-height: 1.5;
-    height: 560px;
-  }
-
   /*estilo dos projetos */
 
   .titulo {
