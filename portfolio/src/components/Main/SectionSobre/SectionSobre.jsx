@@ -1,9 +1,10 @@
 import './SectionSobre.css'
+import Perfil from '../../../../public/assets/Perfil.png'
 import { InstagramLogo, GithubLogo, LinkedinLogo, CloudArrowDown, EnvelopeSimple } from 'phosphor-react'
 
 export function SectionSobre() {
 
-  const Perfil = "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/448795210_2178029879197218_7962828645894631869_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LQbjVPh8rpkQ7kNvgGENreh&_nc_ht=scontent-gru2-2.xx&_nc_gid=A-tVTRUHyCOITAgoBeg1fvm&oh=00_AYA0xxUE6-2DaujTyhF9DEIK5Zx3aU86aDM5709cDRuT3g&oe=66FA08FD";
+  //const Perfil = "https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/448795210_2178029879197218_7962828645894631869_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LQbjVPh8rpkQ7kNvgGENreh&_nc_ht=scontent-gru2-2.xx&_nc_gid=A-tVTRUHyCOITAgoBeg1fvm&oh=00_AYA0xxUE6-2DaujTyhF9DEIK5Zx3aU86aDM5709cDRuT3g&oe=66FA08FD";
 
   return (
     <section className="container-sobre" id="Sobre">

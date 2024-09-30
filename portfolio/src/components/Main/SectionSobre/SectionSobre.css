@@ -23,6 +23,10 @@
   .container-texto-sobre a {
     color: var(--brand-color);
   }
+
+  .cards-redes a {
+    color: var(--white);
+  }
   
   .container-texto-sobre .foto {
     width: 23rem;
