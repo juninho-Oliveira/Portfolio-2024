@@ -10,10 +10,9 @@ export function SectionBanner() {
             <div className="container-grid container-nome">
                 <div className="nome-do-portfolio">
                     <h4>Olá, eu sou</h4>
-                    <h1>Junior Oliveira</h1>
+                    <h1>Damião Junior</h1>
                     <p>Desenvolvedor Front-end.</p>
                 </div>
-
 
                 <div className="redes-sociais">
 
