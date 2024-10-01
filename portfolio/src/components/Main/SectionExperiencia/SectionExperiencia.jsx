@@ -18,6 +18,8 @@ export function SectionExperiencia() {
     img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-tech1.jpg'
   }])
 
+  const [nomeFun, setNomeFun] = useState('')
+
   const respostas = [
     {
       id: 1,
@@ -118,66 +120,67 @@ export function SectionExperiencia() {
     }
   ]
 
-  let nome = []
+  let nome = [];
 
   const handleClick = (valor) => {
     nome = respostas.filter((ele) => ele.titulo === valor)
     setTexto(nome)
+    setNomeFun("")
   };
 
   const handleClickCertificado = (valor) => {
     nome = certi.filter((ele) => ele.titulo === valor)
     setCertificado(nome)
+    setNomeFun("Certificados")
   };
-
 
   //console.log(texto.map(ele => ele.titulo))
   //console.log(certificado)
+  console.log(nome)
 
   return (
 
     <section className="container-grid container-cor" id="experiencia">
-
-      <div className="experiencia">
-        <h1>experiência</h1>
-        <div className="container-experiencia">
-          <ul>
-            <li onClick={() => handleClick('Hackathon')}><a>AdaHack 2024</a></li>
-            <li onClick={() => handleClick('Ford Enter')}><a>Ford Enter</a></li>
-            <li onClick={() => handleClick('Vem Ser Tech')}><a>Vem Ser Tech</a></li>
-            <li onClick={() => handleClickCertificado('Certificados')}><a>Certificados</a></li>
-            <li onClick={() => handleClick('Sobre o portfólio')}><a>Sobre o portfólio</a></li>
-          </ul>
+      
+        <div className="experiencia">
+          <h1>experiência</h1>
+          <div className="container-experiencia">
+            <ul>
+              <li onClick={() => handleClick('Hackathon')}><a>AdaHack 2024</a></li>
+              <li onClick={() => handleClick('Ford Enter')}><a>Ford Enter</a></li>
+              <li onClick={() => handleClick('Vem Ser Tech')}><a>Vem Ser Tech</a></li>
+              <li onClick={() => handleClickCertificado('Certificados')}><a>Certificados</a></li>
+              <li onClick={() => handleClick('Sobre o portfólio')}><a>Sobre o portfólio</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div className="professor">
-        <div className="certificados">
-          {certificado.map((ele) => (
-            <>
-              <div className='tst'>
-                <a href={ele.img} target='_blank'>
-                  <img src={ele.img} alt={ele.descricao} />
-                </a>
-              </div>
-            </>
-          ))}
-        </div>
-        {
-        /*texto.map((ele) =>
-        (
-          <>
-            <div key={ele.id} className="texto-professor">
-              <h3>{ele.titulo}</h3>
-              <p >{ele.data}</p>
-            </div>
-
-            <p>{ele.descricao}</p>
-          </>
-
-        )
-        )*/}
-
+        <div className="professor">
+          <div className="certificados">
+            
+            {nomeFun === "Certificados" ? certificado.map((ele) => (
+              <>
+                <div className='tst'>
+                  <a href={ele.img} target='_blank'>
+                    <img src={ele.img} alt={ele.descricao} />
+                  </a>
+                </div>
+              </>
+            )) : texto.map((ele) =>
+              (
+                <>
+                  <div key={ele.id} className="texto-professor">
+                    <h3>{ele.titulo}</h3>
+                    <p >{ele.data}</p>
+                  </div>
+      
+                  <p>{ele.descricao}</p>
+                </>
+      
+              )
+              )}
+          </div>
+      
       </div>
 
     </section>
