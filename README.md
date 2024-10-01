@@ -27,20 +27,20 @@ Este projeto foi desenvolvido com o objetivo de *testar e consolidar meu conheci
 Abaixo está a organização do projeto:
 
 
-📦 Portfolio
- ┣ 📂 public
- ┣ 📂 src
- ┃ ┣ 📂 components
- ┃ ┃ ┣ 📂 Header
- ┃ ┃ ┣ 📂 Main
- ┃ ┃ ┣ 📂 Footer
- ┃ ┣ 📂 services
- ┃ ┣ 📜 App.jsx
- ┃ ┣ 📜 index.css
- ┃ ┣ 📜 main.jsx
- ┣ 📜 db.json
- ┣ 📜 package.json
- ┗ 📜 vite.config.js
+- 📦 Portfolio
+- ┣ 📂 public
+- ┣ 📂 src
+- ┃ ┣ 📂 components
+- ┃ ┃ ┣ 📂 Header
+- ┃ ┃ ┣ 📂 Main
+- ┃ ┃ ┣ 📂 Footer
+- ┃ ┣ 📂 services
+- ┃ ┣ 📜 App.jsx
+- ┃ ┣ 📜 index.css
+- ┃ ┣ 📜 main.jsx
+- ┣ 📜 db.json
+- ┣ 📜 package.json
+- ┗ 📜 vite.config.js
 
 
 ## 🌐 Deploy
@@ -51,7 +51,7 @@ O projeto foi deployado no *Render* para simular uma API com o db.json. O Axios 
 
 1. Clone o repositório:
    bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/juninho-Oliveira/Portfolio-2024.git
    
 
 2. Acesse o diretório do projeto:
