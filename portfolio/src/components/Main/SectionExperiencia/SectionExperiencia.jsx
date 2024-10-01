@@ -10,6 +10,14 @@ export function SectionExperiencia() {
     descricao: "Participei do AdaHack 2024, onde minha equipe FE-3 desenvolveu uma plataforma que promove a diversidade, inclusão e melhora a cultura organizacional nas empresas. A plataforma permite que colaboradores acompanhem vagas de emprego, forneçam feedback sobre os processos de recrutamento e inclusão, enquanto recrutadores podem gerenciar candidaturas e acessar esses feedbacks para aprimorar suas práticas. Utilizamos dados analíticos para identificar áreas de melhoria nas empresas. Nossa solução foi elogiada pela banca avaliadora, composta por empresas como Cognizant e Scania Brasil, e o código-fonte está disponível no meu GitHub."
   }])
 
+  const [certificado, setCertificado] = useState([{
+    id: 1,
+    titulo: 'Certificados',
+    data: "Março 2024",
+    descricao: "Certificado VemSerTech Ifood",
+    img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-tech1.jpg'
+  }])
+
   const respostas = [
     {
       id: 1,
@@ -31,15 +39,82 @@ export function SectionExperiencia() {
     },
     {
       id: 4,
+      titulo: 'Sobre o portfólio',
+      data: "Setembro 2024-Atual",
+      descricao: "Desenvolvi o projeto do portfólio utilizando React e Vite, junto com a biblioteca Phosphor Icons para ícones. O projeto foi organizado em componentes como Header, Main e Footer, com cada seção do Main (Nome e Banner, Sobre, Experiência e Projetos) sendo separada e estilizada individualmente para evitar conflitos. Usei um arquivo db.json para armazenar os dados dos projetos e fiz o deploy no Render, simulando uma API que é consumida com Axios. Os dados são exibidos no componente Card, que atualiza seu estado com as informações da API. Também criei uma segunda API para a seção de Experiência, gerenciada em um arquivo separado. Todo o projeto segue boas práticas com commits semânticos."
+    }
+  ]
+
+  const certi = [
+    {
+      id: 1,
       titulo: 'Certificados',
-      data: "Nov 2024-Atual",
-      descricao: "Estou empolgado em compartilhar nossa jornada incrível durante o AdaHack 2024, organizado pela Ada Tech onde a equipe FE-3 se uniu"
+      data: "Outubro 2023",
+      descricao: "Trilha | Ifood | Front-end | 11hrs Assícronas",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/Trilha%20%20Ifood%20%20Front-end.jpeg'
+    },
+    {
+      id: 2,
+      titulo: 'Certificados',
+      data: "Julho 2022",
+      descricao: "Udemy Curso de algoritmo e lógica de programação, Udemy",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/udemy.jpg'
+    },
+    {
+      id: 3,
+      titulo: 'Certificados',
+      data: "Janeiro 2023",
+      descricao: "Trilha Conectar Rocketseat",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/discover-rocke.png'
+    },
+    {
+      id: 4,
+      titulo: 'Certificados',
+      data: "Maio 2024",
+      descricao: "Trilha Conectar Rocketseat",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/Rocketseat-2.jpg'
     },
     {
       id: 5,
-      titulo: 'Sobre o portfólio',
-      data: "Nov 2024-Atual",
-      descricao: "Desenvolvi o projeto do portfólio utilizando React e Vite, junto com a biblioteca Phosphor Icons para ícones. O projeto foi organizado em componentes como Header, Main e Footer, com cada seção do Main (Nome e Banner, Sobre, Experiência e Projetos) sendo separada e estilizada individualmente para evitar conflitos. Usei um arquivo db.json para armazenar os dados dos projetos e fiz o deploy no Render, simulando uma API que é consumida com Axios. Os dados são exibidos no componente Card, que atualiza seu estado com as informações da API. Também criei uma segunda API para a seção de Experiência, gerenciada em um arquivo separado. Todo o projeto segue boas práticas com commits semânticos."
+      titulo: 'Certificados',
+      data: "Maio 2024",
+      descricao: "Trila Fundamentar Rocketseat",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/Rocketseat-1.jpg'
+    },
+    {
+      id: 6,
+      titulo: 'Certificados',
+      data: "Maio 2023",
+      descricao: "Excel Escola Senai Conde José Vicente Azevedo",
+      img: 'https://raw.githubusercontent.com/juninho-Oliveira/Portfolio-2023/refs/heads/main/certificados/imgs/Excel-1.jpg'
+    },
+    {
+      id: 7,
+      titulo: 'Certificados',
+      data: "Outubro 2022",
+      descricao: "Kenzie Curso de desenvolvimento web front-end",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/Kenzie.jpg'
+    },
+    {
+      id: 8,
+      titulo: 'Certificados',
+      data: "Outubro 2023",
+      descricao: "ESG, o que todo profissional deve saber",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/Inbs-ESG.jpg'
+    },
+    {
+      id: 9,
+      titulo: 'Certificados',
+      data: "Abril 2024",
+      descricao: "Ada tech ifood hackathon",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-Hack-tech.png'
+    },
+    {
+      id: 1,
+      titulo: 'Certificados',
+      data: "Março 2024",
+      descricao: "Certificado VemSerTech Ifood",
+      img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-tech1.jpg'
     }
   ]
 
@@ -48,11 +123,16 @@ export function SectionExperiencia() {
   const handleClick = (valor) => {
     nome = respostas.filter((ele) => ele.titulo === valor)
     setTexto(nome)
-
   };
 
-  //console.log(texto.map(ele => ele.titulo))
+  const handleClickCertificado = (valor) => {
+    nome = certi.filter((ele) => ele.titulo === valor)
+    setCertificado(nome)
+  };
 
+
+  //console.log(texto.map(ele => ele.titulo))
+  //console.log(certificado)
 
   return (
 
@@ -65,15 +145,26 @@ export function SectionExperiencia() {
             <li onClick={() => handleClick('Hackathon')}><a>AdaHack 2024</a></li>
             <li onClick={() => handleClick('Ford Enter')}><a>Ford Enter</a></li>
             <li onClick={() => handleClick('Vem Ser Tech')}><a>Vem Ser Tech</a></li>
-            <li onClick={() => handleClick('Certificados')}><a>Certificados</a></li>
+            <li onClick={() => handleClickCertificado('Certificados')}><a>Certificados</a></li>
             <li onClick={() => handleClick('Sobre o portfólio')}><a>Sobre o portfólio</a></li>
           </ul>
         </div>
       </div>
 
       <div className="professor">
-
-        {texto.map((ele) =>
+        <div className="certificados">
+          {certificado.map((ele) => (
+            <>
+              <div className='tst'>
+                <a href={ele.img} target='_blank'>
+                  <img src={ele.img} alt={ele.descricao} />
+                </a>
+              </div>
+            </>
+          ))}
+        </div>
+        {
+        /*texto.map((ele) =>
         (
           <>
             <div key={ele.id} className="texto-professor">
@@ -85,7 +176,7 @@ export function SectionExperiencia() {
           </>
 
         )
-        )}
+        )*/}
 
       </div>
 

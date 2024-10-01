@@ -113,23 +113,9 @@ ul, li,  a{
     font-size: 16px;
   }
 
-  .professor .texto-professor {
-    display: none;
-  }
-
-  .professor  {
-    display: flex;
-    align-items: center;
-    height: 300px;
-    padding-top: 50px;
-  }
-
   #digital-house{
     color: var(--brand-color);
     font-weight: 600;
-  }
-  .professor span  {
-    display: none;
   }
 
 }
