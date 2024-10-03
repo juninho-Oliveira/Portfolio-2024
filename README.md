@@ -45,6 +45,8 @@ Abaixo está a organização do projeto:
 
 ## 🌐 Deploy
 
+<a href="https://portfolio-2024-tau-two.vercel.app/">Portfólio</a>
+
 O projeto foi deployado no *Render* para simular uma API com o db.json. O Axios realiza as requisições GET para carregar os dados no componente de *Cards*.
 
 ## 🛠 Como Rodar o Projeto
