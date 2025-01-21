@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://serverportfolio-ze76.onrender.com/Projetos"
+const URL = "https://serverportfolio-wgbs.onrender.com/Projetos"
 
 const api = axios.create({
   baseURL: URL,
