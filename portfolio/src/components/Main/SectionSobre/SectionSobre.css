@@ -4,19 +4,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 35rem;
-    background-color: var(--dark-70);
-   
+    padding: 40px;
+    background-color: var(--dark-70);   
+  }
+
+  .secao-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .container-texto-sobre {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
   .texto-sobre .redes-sociais  {
     color: var(--white);
+    margin-top: 0;
   }
 
 
@@ -46,12 +52,26 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 34rem;
+    gap: 10px;
+    height: 100%;
+    width: 50%;
     color: var(--white);
+  }
+
+  .texto-sobre .Sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+  }
+
+  .texto-sobre .Sobre p {
+    width: 100%;
+    font-size: 14px;
   }
   
   .texto-sobre h1 {
-    margin-bottom: 1.2rem;
+    /* margin-bottom: 1.2rem; */
     font-size: 24px;
     text-transform: uppercase;
   }
@@ -70,9 +90,9 @@
     gap: 2.5rem;
   }
 
-  .redes-sociais {
-    margin-bottom: 1.5rem;
-  }
+   .redes-sociais {
+    margin-bottom: 0;
+  } 
   
   .container-texto-sobre .redes-sociais a {
     color: var(--brand-color);
@@ -86,13 +106,21 @@
 
   @media (max-width:970px) {
     
-    .container-texto-sobre .texto-sobre {
+    .container-texto-sobre {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }    
+
+    .texto-sobre {
+      align-items: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
       line-height: 0;
       gap: 1.2rem;
-      height: 80%;
+      height: 100%;
+      width: 100%;
     }
 
     .texto-sobre h1 {

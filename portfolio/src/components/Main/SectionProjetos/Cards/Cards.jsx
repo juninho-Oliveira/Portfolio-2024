@@ -26,8 +26,7 @@ export function Cards ({titulo, descricao, tecnologias, url, imagem}) {
         </div>
 
         <div className="cards-redes Linkedin" id="botao-cards">
-            <Link size={32} color='white' />
-            <a href={url} target="_blank"> Visualizar</a>
+            <a href={url} target="_blank"> <Link size={32} color='white' /> Visualizar</a>
         </div>
     </div>
     )

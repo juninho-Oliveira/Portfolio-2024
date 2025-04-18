@@ -11,47 +11,52 @@ export function SectionSobre() {
 
       <div className="container-grid container-texto-sobre">
 
-        <div className="foto">
-          <img src={Perfil} alt='Logotipo do App' />
-        </div>
-
-        <div className="texto-sobre">
-          
-          <div>
-            <h1>Sobre mim</h1>
-            <p>Desenvolvedor Front-End com sólidos conhecimentos em HTML, CSS, JavaScript e React.
-
-              Apaixonado por criar interfaces intuitivas e funcionais, com foco em performance e experiência do usuário.
-
-              Tenho experiência prática em construção de aplicações web responsivas e escaláveis, sempre buscando expandir meu conhecimento com novas tecnologias e contribuir para projetos inovadores.
-
-              Bolsista de programas de formação renomados como o da<a href="https://www.ford.com.br/sobre-a-ford/ford-enter/" target="_blank"> Ford</a>  e <a href="https://ada.tech/sou-aluno/programas/ifood-vem-ser-tech" target="_blank">iFood.</a>
-            </p>
+        <section className='secao-sobre'>
+          <div className="foto">
+            <img src={Perfil} alt='Logotipo do App' />
           </div>
 
+          <div className="texto-sobre">
 
-          <div className="redes-sociais">
-            <a href="https://www.instagram.com/juninho_oliveirah/" target="_blank">< InstagramLogo size={32} /></a>
-            <a href="https://www.linkedin.com/in/dami%C3%A3o-junior/" target="_blank">< LinkedinLogo size={32} /></a>
-            <a href="https://github.com/juninho-Oliveira" target="_blank">< GithubLogo size={32} /></a>
-          </div>
+            <div className='Sobre'>
+              <h1>Sobre mim</h1>
+              <p>🚀 Desenvolvedor Front-End | React | TypeScript | JavaScript | HTML | CSS <br />
 
-          <div className="curriculo">
+                Sou um Desenvolvedor Front-End em constante evolução, com foco em construir interfaces modernas, acessíveis e com excelente performance. Tenho experiência prática com React, TypeScript, JavaScript, HTML e CSS, desenvolvendo aplicações responsivas e escaláveis com atenção especial à experiência do usuário. <br />
 
-            <div className="cards-redes Linkedin">
-              <EnvelopeSimple size={32} />
-              <a href="mailto:junior.oliveira05@icloud.com" > E-mail</a>
+                🎯 Busco oportunidades em empresas de tecnologia onde eu possa aplicar meus conhecimentos, colaborar em equipe e continuar aprendendo com projetos desafiadores e inovadores.<br />
+
+                🧠 Estudo continuamente as melhores práticas do mercado, versionamento com Git, consumo de APIs, componentização, hooks e tipagem com TypeScript. Atualmente, também estou aprendendo Python na faculdade, expandindo meu leque de conhecimentos e fortalecendo minha lógica de programação.<br />
+
+                💼 Fui bolsista em programas de formação oferecidos por empresas como <a href="https://www.ford.com.br/sobre-a-ford/ford-enter/" target="_blank"> Ford</a> e <a href="https://ada.tech/sou-aluno/programas/ifood-vem-ser-tech" target="_blank">iFood.</a>, onde tive contato com projetos reais e ampliei minha visão sobre desenvolvimento ágil e trabalho em equipe.<br />
+
+                👨‍💻 Stack principal: React, TypeScript, JavaScript (ES6+), HTML5, CSS3 (Sass/SCSS), Git, GitHub e Python.<br />
+
+                📫 Aberto a novas oportunidades, projetos desafiadores e conexões com profissionais da área de tecnologia.
+              </p>
             </div>
 
-            <div className="cards-redes Github">
 
-              <CloudArrowDown size={32} />
-              <a href="/assets/Damio-Junior-Oliveira.pdf" download="/assets/Damio-Junior-Oliveira.pdf"> Currículo</a>
+            <div className="redes-sociais">
+              <a href="https://www.instagram.com/juninho_oliveirah/" target="_blank">< InstagramLogo size={32} /></a>
+              <a href="https://www.linkedin.com/in/dami%C3%A3o-junior/" target="_blank">< LinkedinLogo size={32} /></a>
+              <a href="https://github.com/juninho-Oliveira" target="_blank">< GithubLogo size={32} /></a>
+            </div>
+
+            <div className="curriculo">
+
+              <div className="cards-redes Linkedin">
+                <a href="mailto:junior.oliveira05@icloud.com" > <EnvelopeSimple size={32} /> E-mail</a>
+              </div>
+
+              <div className="cards-redes Github">
+                <a href="/assets/Damio-Junior-Oliveira.pdf" download="/assets/Damio-Junior-Oliveira.pdf"> <CloudArrowDown size={32} /> Currículo</a>
+              </div>
+
             </div>
 
           </div>
-
-        </div>
+        </section>
 
       </div>
     </section>
