@@ -10,15 +10,14 @@ export function SectionBanner() {
     const [showH1, setShowH1] = useState(false);
     const [showP, setShowP] = useState(false);
 
-    // Controla a sequência de exibição
     useEffect(() => {
         const timer1 = setTimeout(() => {
             setShowH1(true);
-        }, 1500); // Espera o h4 terminar de digitar (ajuste conforme necessário)
+        }, 1500); 
 
         const timer2 = setTimeout(() => {
             setShowP(true);
-        }, 3000); // Espera o h1 terminar de digitar (ajuste conforme necessário)
+        }, 3000); 
 
         return () => {
             clearTimeout(timer1);
