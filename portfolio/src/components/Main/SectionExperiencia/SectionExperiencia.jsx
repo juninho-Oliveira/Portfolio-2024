@@ -88,7 +88,7 @@ export function SectionExperiencia() {
       titulo: 'Certificados',
       data: "Maio 2023",
       descricao: "Excel Escola Senai Conde José Vicente Azevedo",
-      img: 'https://raw.githubusercontent.com/juninho-Oliveira/Portfolio-2023/refs/heads/main/certificados/imgs/Excel-1.jpg'
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Excel_B%C3%A1sic-1_jyyc2r.jpg'
     },
     {
       id: 7,
@@ -112,11 +112,32 @@ export function SectionExperiencia() {
       img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-Hack-tech.png'
     },
     {
-      id: 1,
+      id: 10,
       titulo: 'Certificados',
       data: "Março 2024",
       descricao: "Certificado VemSerTech Ifood",
       img: 'https://portfolio-2023-two-green.vercel.app/certificados/imgs/ada-tech1.jpg'
+    },
+    {
+      id: 11,
+      titulo: 'Certificados',
+      data: "Maio 2024",
+      descricao: "Certificado Programador Front-end Ford Enter",
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_PROGRAMADOR_FRONT-EN-1_nnrv2h.jpg'
+    },
+    {
+      id: 12,
+      titulo: 'Certificados',
+      data: "Janeiro 2024",
+      descricao: "Certificado Inglês Técnico ",
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Ingl%C3%AAs_T%C3%A9cnic-1_vceepl.jpg'
+    },
+    {
+      id: 13,
+      titulo: 'Certificados',
+      data: "Outubro 2024",
+      descricao: "Certificado Imprantação de Serviços em Nuvem - Google Cloud Foundations",
+      img: '3https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Implanta%C3%A7%C3%A3o_de_Servi%C3%A7os_em_Nuvem_-_Google_Cloud_Foundation-1_ivinmj.jpg'
     }
   ]
 
