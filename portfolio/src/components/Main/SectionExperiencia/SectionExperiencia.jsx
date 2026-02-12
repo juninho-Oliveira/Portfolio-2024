@@ -86,9 +86,9 @@ export function SectionExperiencia() {
     {
       id: 6,
       titulo: 'Certificados',
-      data: "Maio 2023",
-      descricao: "Excel Escola Senai Conde José Vicente Azevedo",
-      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Excel_B%C3%A1sic-1_jyyc2r.jpg'
+      data: "Dezembro 2024",
+      descricao: "Power BI - Escola Senai Conde José Vicente Azevedo",
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770935051/Certificado_Power_B-1_almxas.jpg'
     },
     {
       id: 7,
@@ -123,21 +123,28 @@ export function SectionExperiencia() {
       titulo: 'Certificados',
       data: "Maio 2024",
       descricao: "Certificado Programador Front-end Ford Enter",
-      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_PROGRAMADOR_FRONT-EN-1_nnrv2h.jpg'
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770934951/Certificado_PROGRAMADOR_FRONT-EN-1_nnrv2h.jpg'
     },
     {
       id: 12,
       titulo: 'Certificados',
       data: "Janeiro 2024",
       descricao: "Certificado Inglês Técnico ",
-      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Ingl%C3%AAs_T%C3%A9cnic-1_vceepl.jpg'
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770935117/Certificado_Ingl%C3%AAs_T%C3%A9cnic-1_vceepl.jpg'
     },
     {
       id: 13,
       titulo: 'Certificados',
       data: "Outubro 2024",
       descricao: "Certificado Imprantação de Serviços em Nuvem - Google Cloud Foundations",
-      img: '3https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770933008/Certificado_Implanta%C3%A7%C3%A3o_de_Servi%C3%A7os_em_Nuvem_-_Google_Cloud_Foundation-1_ivinmj.jpg'
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770935212/Certificado_Implanta%C3%A7%C3%A3o_de_Servi%C3%A7os_em_Nuvem_-_Google_Cloud_Foundation-1_ivinmj.jpg'
+    },
+    {
+      id: 14,
+      titulo: 'Certificados',
+      data: "Maio 2023",
+      descricao: "Excel Escola Senai Conde José Vicente Azevedo",
+      img: 'https://res.cloudinary.com/dtkdjcmi2/image/upload/v1770934993/Certificado_Excel_B%C3%A1sic-1_jyyc2r.jpg'
     }
   ]
 
@@ -162,46 +169,46 @@ export function SectionExperiencia() {
   return (
 
     <section className="container-grid container-cor" id="experiencia">
-      
-        <div className="experiencia">
-          <h1>experiência</h1>
-          <div className="container-experiencia">
-            <ul>
-              <li onClick={() => handleClick('Hackathon')}><a>AdaHack 2024</a></li>
-              <li onClick={() => handleClick('Ford Enter')}><a>Ford Enter</a></li>
-              <li onClick={() => handleClick('Vem Ser Tech')}><a>Vem Ser Tech</a></li>
-              <li onClick={() => handleClickCertificado('Certificados')}><a>Certificados</a></li>
-              <li onClick={() => handleClick('Sobre o portfólio')}><a>Sobre o portfólio</a></li>
-            </ul>
-          </div>
+
+      <div className="experiencia">
+        <h1>experiência</h1>
+        <div className="container-experiencia">
+          <ul>
+            <li onClick={() => handleClick('Hackathon')}><a>AdaHack 2024</a></li>
+            <li onClick={() => handleClick('Ford Enter')}><a>Ford Enter</a></li>
+            <li onClick={() => handleClick('Vem Ser Tech')}><a>Vem Ser Tech</a></li>
+            <li onClick={() => handleClickCertificado('Certificados')}><a>Certificados</a></li>
+            <li onClick={() => handleClick('Sobre o portfólio')}><a>Sobre o portfólio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="professor">
+        <div className="certificados">
+
+          {nomeFun === "Certificados" ? certificado.map((ele) => (
+            <>
+              <div className='tst'>
+                <a href={ele.img} target='_blank'>
+                  <img src={ele.img} alt={ele.descricao} />
+                </a>
+              </div>
+            </>
+          )) : texto.map((ele) =>
+          (
+            <>
+              <div key={ele.id} className="texto-professor">
+                <h3>{ele.titulo}</h3>
+                <p >{ele.data}</p>
+              </div>
+
+              <p>{ele.descricao}</p>
+            </>
+
+          )
+          )}
         </div>
 
-        <div className="professor">
-          <div className="certificados">
-            
-            {nomeFun === "Certificados" ? certificado.map((ele) => (
-              <>
-                <div className='tst'>
-                  <a href={ele.img} target='_blank'>
-                    <img src={ele.img} alt={ele.descricao} />
-                  </a>
-                </div>
-              </>
-            )) : texto.map((ele) =>
-              (
-                <>
-                  <div key={ele.id} className="texto-professor">
-                    <h3>{ele.titulo}</h3>
-                    <p >{ele.data}</p>
-                  </div>
-      
-                  <p>{ele.descricao}</p>
-                </>
-      
-              )
-              )}
-          </div>
-      
       </div>
 
     </section>
